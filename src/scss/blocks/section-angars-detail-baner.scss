@@ -1,0 +1,80 @@
+.section-angars-detail-baner-section {
+    background-color: #F3F8FB;
+}
+
+.section-angars-detail-baner {
+    padding: 40px 0;
+    display: flex;
+    gap: 30px;
+
+    img {
+        width: 100%;
+        max-width: 520px;
+        aspect-ratio: 520/350;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .h1 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 970px) {
+    .section-angars-detail-baner {
+        flex-direction: column;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .section-angars-detail-baner-section {
+        padding: 0;
+    }
+
+    .section-angars-detail-baner {
+        padding: 0 0 40px;
+        display: flex;
+        gap: 30px;
+    
+        img {
+            max-width: none;
+            aspect-ratio: 375/252;
+        }
+    
+        .right {
+            gap: 20px;
+            padding: 0 var(--def-padding);
+        }
+    
+        .h1 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 30px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+}

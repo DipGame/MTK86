@@ -1,0 +1,296 @@
+.main-form {
+    display: flex;
+    gap: 30px;
+}
+
+.main-form-container {
+    background: linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%);
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    max-width: 850px;
+
+    .help-cont {
+        position: relative;
+        z-index: 1;
+    }
+
+    .back-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        object-position: bottom;
+        height: 340px;
+        z-index: 0;
+    }
+
+    .top-text {
+        color: #FFF;
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 30px;
+    }
+
+    .h2 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #FFF;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #FFF;
+        margin-bottom: 20px;
+
+        a {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #FFF;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .inputs_cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+
+        .input_cont {
+            width: 100%;
+
+            input {
+                width: 100%;
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .checkbox {
+        margin: 30px 0 20px;
+
+        p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            unicode-bidi: normal;
+        }
+
+        a {
+            display: inline-block;
+            line-height: 122%;
+        }
+    }
+
+    .checkbox.err .check-box-btn {
+        background-color: var(--color-red);
+    }
+
+    .checkbox .check-box-btn {
+        background-color: #007DC8;
+    }
+
+    .checkbox.checked.v2 .check {
+        border: none;
+    }
+
+    .button_v2 {
+        max-width: 159px;
+    }
+}
+
+.main-form-contacts-container {
+    background-color: #F3F8FB;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 410px;
+
+    .top-text {
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #0172BB;
+        margin-bottom: 20px;
+    }
+
+    #map {
+        aspect-ratio: 370/180;
+        margin-bottom: 30px;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .flex {
+            gap: 20px;
+
+            .svg {
+                max-width: 50px;
+                max-height: 50px;
+                min-height: 50px;
+                min-width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%);
+                border-radius: 2px;
+
+                svg {
+                    max-width: 24px;
+                    max-height: 24px;
+                    min-height: 24px;
+                    min-width: 24px;
+                }
+            }
+
+            .flex-direct {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: space-between;
+
+                .top-text-svg {
+                    font-family: Involve;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 14px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    color: #668597;
+                }
+
+                .bootom-text-svg {
+                    font-family: Involve;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 20px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-form {
+        flex-direction: column;
+    }
+
+    .main-form-container,
+    .main-form-contacts-container {
+        max-width: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-form {
+        gap: var(--def-padding);
+    }
+
+    .main-form-container {
+        padding: 40px 20px 20px;
+
+        .back-img {
+            height: 326px;
+        }
+
+        .top-text {
+            margin-bottom: 20px;
+        }
+
+        .h2 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-family: Involve;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+
+            a {
+                font-family: Involve;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-form-contacts-container {
+        #map {
+            aspect-ratio: 303/210;
+        }
+    }
+
+    .main-form-contacts-container .cont .flex .flex-direct .bootom-text-svg {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+}

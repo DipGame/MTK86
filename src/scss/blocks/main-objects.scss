@@ -1,0 +1,201 @@
+.main-objects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media (min-width: 721px) {
+    .left-bottom-mob {
+        display: none;
+    }
+}
+
+.main-objects-card {
+    display: flex;
+    border: 1px solid #E0EBF2;
+
+    table {
+        margin: 20px 0 0;
+        border-collapse: separate;
+        border-spacing: 20px 15px;
+
+        tbody {
+            position: relative;
+            left: -20px;
+        }
+
+        tr {
+
+            td {
+                color: #668597;
+                font-family: Involve;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+                span {
+                    color: var(--text-color);
+                    font-family: Involve;
+                    font-weight: 500;
+                    font-style: Regular;
+                    font-size: 14px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    .left {
+        width: 100%;
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+
+        .left-top {
+            padding: 30px 20px 10px;
+
+            .h3 {
+                font-family: Involve;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 20px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-transform: uppercase;
+            }
+        }
+
+        .left-bottom {
+            background-color: #F3F8FB;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0 20px;
+            height: 60px;
+            margin-top: auto;
+
+            p {
+                font-family: Involve;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            span {
+                font-family: Involve;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                display: contents;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+
+        .img {
+            height: -webkit-fill-available;
+
+            img {
+                height: -webkit-fill-available;
+                aspect-ratio: 300/220;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .button {
+            margin-top: auto;
+            height: 60px;
+            min-height: 60px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-objects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-objects-card .left,
+    .main-objects-card .right {
+        max-width: -webkit-fill-available;
+    }
+
+    .main-objects-card .right .img img {
+        aspect-ratio: 430/220;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-objects-card {
+        flex-direction: column-reverse;
+    }
+
+    .main-objects-card .right .button {
+        display: none;
+    }
+
+    .left-bottom-mob {
+        .button {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-objects-card {
+        .left {
+            .left-top {
+                padding: 20px 20px 10px;
+
+                .h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .right {
+
+            .img {
+                height: auto;
+
+                img {
+                    height: auto;
+                    aspect-ratio: 343/252;
+                }
+            }
+        }
+    }
+}

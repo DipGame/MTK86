@@ -1,0 +1,23 @@
+.section-angars-text {
+
+    .button_v3 {
+        max-width: 174px;
+        text-transform: none;
+        margin-top: 40px;
+    }
+   
+}
+
+.section-angars-text-section.v2 {
+    background-color: #F3F8FB;
+}
+
+@media (max-width: 500px) {
+    .section-angars-text {
+
+        .button_v3 {
+            max-width: none;
+        }
+       
+    }
+}

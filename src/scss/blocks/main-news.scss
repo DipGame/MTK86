@@ -1,0 +1,116 @@
+.main-news-card {
+    border: 1px solid #E0EBF2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        aspect-ratio: 410/250;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .h3 {
+        padding: 20px 20px 0;
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .default {
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        padding: 20px 20px 0;
+        width: 100%;
+
+        * {
+            font-family: Involve;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .date {
+        padding: 15px 20px;
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #28282880;
+    }
+
+    .button {
+        max-width: 174px;
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: none;
+        margin: auto 20px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-news-grid {
+        gap: 20px;
+    }
+
+    .main-news-card {
+        img {
+            aspect-ratio: 343/209;
+        }
+        .default {
+            font-family: Involve;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+    
+            * {
+                font-family: Involve;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+    
+        .button {
+            margin: 0 20px 30px;
+        }
+    }
+}

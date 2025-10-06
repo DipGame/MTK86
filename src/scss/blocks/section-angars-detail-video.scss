@@ -1,0 +1,42 @@
+.section-angars-detail-video-section {
+    background-color: #F3F8FB;
+}
+
+.section-angars-detail-video {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        max-width: 410px;
+
+        .h2 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 36px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+
+    .def-anons-img-for-video {
+        width: 100%;
+        max-width: 850px;
+        aspect-ratio: 850/500;
+    }
+}
+
+@media (max-width: 720px) {
+    .section-angars-detail-video {
+        flex-direction: column;
+        align-items: start;
+    }
+}

@@ -1,0 +1,272 @@
+.main-baner-section {
+    background-position: center;
+    background-size: cover;
+    padding: 75px var(--def-padding);
+    position: relative;
+
+    * {
+        color: #FFF;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #000;
+        opacity: .3;
+    }
+}
+
+.main-baner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        width: 100%;
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-position: center;
+        background-size: cover;
+
+        @media (min-width: 721px) {
+            background: none !important;
+        }
+
+        .h1 {
+            font-family: Involve;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 64px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        .subtext {
+            font-family: Involve;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 32px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        .button {
+            margin-top: 10px;
+            max-width: 245px;
+        }
+    }
+}
+
+.baner-form {
+    width: 410px;
+    background: linear-gradient(128.56deg, #0078B6 0%, #0099E1 101.51%),
+        linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%);
+    height: auto;
+    padding: 40px 30px;
+
+    .h2 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        &:nth-of-type(3) {
+            margin-bottom: 0;
+        }
+
+        .name-container {
+            font-family: Involve;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        .cont_v1 {
+            display: flex;
+            gap: 20px;
+
+            .input_cont {
+                width: -webkit-fill-available;
+
+                input {
+                    width: 100%;
+                    padding: 0 8px;
+                }
+            }
+        }
+
+        .cont_v2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .input_cont {
+                input {
+                    width: -webkit-fill-available;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-baner {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            max-width: 706px;
+        }
+    }
+
+    .baner-form {
+        width: 100%;
+        max-width: 706px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-baner-section {
+        background: none !important;
+        padding: 0;
+
+        * {
+            color: #FFF;
+        }
+
+
+    }
+
+    .main-baner {
+        gap: 0;
+        align-items: start;
+        justify-content: start;
+
+        .left {
+            padding: 214px var(--def-padding) 40px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-color: #000;
+                opacity: .3;
+            }
+
+            .h1 {
+                font-size: 36px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .subtext {
+                font-size: 22px;
+                z-index: 1;
+            }
+            
+            .button {
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        .right  {
+            width: 100%;
+        }
+    }
+
+    .baner-form {
+        width: 100%;
+        padding: 30px 20px;
+
+        .h2 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            &:nth-of-type(3) {
+                margin-bottom: 0;
+            }
+
+            .name-container {
+                font-family: Involve;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            .cont_v1 {
+
+                .input_cont {
+                    width: -webkit-fill-available;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cont_v2 {
+                .input_cont {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

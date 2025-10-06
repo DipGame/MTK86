@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ООО «МТК» - металло-тентовые конструкции в Сургуте - изготовление и продажа</title>
+	<link rel="stylesheet" href="./fonts/Involve.css" />
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU" type="text/javascript"></script>
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+	<div id="is-admin">
+		
+	</div>
+
+	@@include('blocks/overlay.html')
+	@@include('blocks/popup-form.html')
+	@@include('blocks/popupCheck.html')
+	@@include('blocks/load.html')
+	@@include('blocks/header.html')
+	<main>
+		<div class="bread flex padding" id="bread">
+            <ul class="def_div">
+
+                <li>
+
+                    <a href="/" title="Главная" itemprop="item">
+                        Главная
+                    </a>
+                </li>
+                <li>/</li>
+                <li>
+                  Цены
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="title invise">
+            Строительство Ангаров под ключ
+        </h1>
+		@@include('blocks/section-angars-baner.html') 
+		@@include('blocks/section-angars-types.html')
+		@@include('blocks/section-angars-text.html')
+		@@include('blocks/section-angars-projects.html')
+		@@include('blocks/section-angars-form.html')
+        @@include('blocks/main-stages.html')
+		@@include('blocks/main-questions.html')
+		@@include('blocks/main-form.html')
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/map.js"></script>
+</body>
+
+</html>

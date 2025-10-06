@@ -1,0 +1,131 @@
+.section-angars-tabs-container {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.section-angars-tab {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%) 1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    cursor: pointer;
+    font-family: Involve;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #0160A7;
+    border-radius: 2px;
+
+    * {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #0160A7;
+        display: contents;
+    }
+
+    &.active {
+        background: linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%);
+        color: #FFF;
+
+        * {
+            color: #FFF;
+        }
+    }
+}
+
+.section-angars-types {
+
+    .main-serives-card {
+
+        &.last {
+            background-color: #0164AB;
+            justify-content: center;
+
+            .h3 {
+                color: #FFF;
+                background-image: none;
+                font-family: Involve;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 20px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-transform: uppercase;
+            }
+
+            path {
+                stroke: #FFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .section-angars-tab span {
+        display: none;
+    }
+
+    .section-angars-tabs-container {
+        margin-bottom: 45px;
+        display: flex;
+    }
+
+    .section-angars-tab {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+
+        * {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+
+    .section-angars-types .main-serives-card.last .h3 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+}

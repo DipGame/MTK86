@@ -1,0 +1,36 @@
+.section-angars-detail-description-section {
+    background-color: #F3F8FB;
+}
+
+.section-angars-detail-description {
+
+    .default {
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 721px) {
+    .section-angars-detail-description-tab:not(:last-of-type) {
+        border-right: 0 !important;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .section-angars-detail-description-tabs-container {
+        flex-direction: column;
+    }
+
+    .section-angars-detail-description-tab {
+        &:not(:last-of-type) {
+            border-bottom: 0;
+        }
+    }
+}

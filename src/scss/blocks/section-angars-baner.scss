@@ -1,0 +1,83 @@
+.section-angars-baner-section {
+    background-color: #F3F8FB;
+}
+
+.section-angars-baner {
+    padding: 40px 0;
+
+    .h1 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+
+.section-angars-baner-flex {
+    display: flex;
+    gap: 30px;
+
+    .img {
+        aspect-ratio: 520/350;
+        max-width: 520px;
+        height: fit-content;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+@media (max-width: 970px) {
+    .section-angars-baner-flex {
+        flex-direction: column;
+    }
+
+    .section-angars-baner-flex .img {
+        max-width: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-angars-baner {
+        padding: 40px 0;
+    
+        .h1 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 30px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+    
+    .section-angars-baner-flex {
+        .img {
+            aspect-ratio: 343/230;
+        }
+    
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+    }
+}

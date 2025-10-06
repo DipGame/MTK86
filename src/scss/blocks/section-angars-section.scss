@@ -1,0 +1,152 @@
+.section-angars-card_1 {
+    padding: 20px;
+    border: 1px solid #E0EBF2;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    img {
+        aspect-ratio: 370/250;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 20px;
+    }
+
+    .h3 {
+        font-family: Involve;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .default {
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+
+        * {
+            font-family: Involve;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    table {
+        margin-bottom: 10px;
+        width: fit-content;
+
+        tr {
+            td {
+                padding: 7px 0;
+            }
+
+            td:first-child {
+                color: #668597;
+            }
+
+            td:last-child {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .price {
+        font-family: Involve;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+
+        b {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: auto;
+
+        .btn-flex {
+            gap: 10px;
+
+            &:hover {
+                path {
+                    stroke: #FFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .section-angars-grid_1 {
+        gap: var(--def-padding);
+    }
+
+    .section-angars-section_1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-angars-card_1 {
+        padding: var(--def-padding) var(--def-padding) 20px;
+
+        img {
+            aspect-ratio: 343/250;
+            margin-bottom: var(--def-padding);
+        }
+
+        .h3 {
+            font-size: 18px;
+        }
+
+        .default {
+            font-size: 12px;
+            margin-bottom: 5px;
+
+            * {
+                font-size: 12px;
+            }
+        }
+
+        table {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            margin-bottom: 10px;
+        }
+    }
+}
