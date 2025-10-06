@@ -1,0 +1,155 @@
+.contacts-page-section {
+    background-color: #F3F8FB;
+    padding-top: 40px;
+}
+
+.contacts-page {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 40px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        min-width: 325px;
+
+        .h1 {
+            font-family: Involve;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 36px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .midle-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 50px;
+
+            .card {
+                display: flex;
+                gap: 20px;
+
+                .svg {
+                    max-width: 50px;
+                    max-height: 50px;
+                    min-height: 50px;
+                    min-width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(128.56deg, #007DC8 0%, #0160A7 101.51%);
+                    border-radius: 2px;
+
+                    svg {
+                        max-width: 24px;
+                        max-height: 24px;
+                        min-height: 24px;
+                        min-width: 24px;
+                    }
+                }
+
+                .flex-direct {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    justify-content: space-between;
+
+                    .top-text-svg {
+                        font-family: Involve;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 14px;
+                        leading-trim: NONE;
+                        color: #668597;
+                    }
+
+                    .bootom-text-svg {
+                        font-family: Involve;
+                        font-weight: 600;
+                        font-style: SemiBold;
+                        font-size: 20px;
+                        leading-trim: NONE;
+                        transition: .5s;
+
+                        &.phone {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+
+            a.card:hover {
+                .flex-direct {
+                    .bootom-text-svg.phone {
+                        color: #007DC8;
+                    }
+                }
+            }
+        }
+
+        .footer-soc-link {
+            max-width: 50px;
+            max-height: 50px;
+            min-height: 50px;
+            min-width: 50px;
+        }
+    }
+
+    #map {
+        height: auto;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 970px) {
+    .contacts-page {
+        flex-direction: column;
+        
+        #map {
+            max-width: none;
+            aspect-ratio: 700/482;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .contacts-page {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts-page-section {
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .contacts-page {
+        justify-content: start;
+        padding: 40px var(--def-padding);
+    
+        .left {
+            min-width: auto;
+    
+            .h1 {
+                font-size: 30px;
+                margin-bottom: 48px;
+            }
+        }
+    
+        #map {
+            aspect-ratio: 343/440;
+        }
+    }
+}

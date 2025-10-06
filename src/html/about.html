@@ -35,28 +35,27 @@
 	@@include('blocks/load.html')
 	@@include('blocks/header.html')
 	<main>
-		<div class="bread flex padding" id="bread">
+		<div class="bread flex padding no-back v2" id="bread">
             <ul class="def_div">
-
                 <li>
-
                     <a href="/" title="Главная" itemprop="item">
                         Главная
                     </a>
                 </li>
                 <li class="fix-opacity">/</li>
                 <li class="fix-opacity">
-                  Проекты
+                    О компании
                 </li>
             </ul>
         </div>
-
-        <h1 class="title ">
-            Проекты
+        <h1 class="title invise">
+            О компании
         </h1>
-        @@include('blocks/projects-list.html')
-        @@include('blocks/projects-stages.html')
-        @@include('blocks/section-angars-form.html')
+        @@include('blocks/about-baner.html')
+        @@include('blocks/about-map-img.html')
+        @@include('blocks/main-rews.html')
+        @@include('blocks/main-sertificates.html')
+        @@include('blocks/main-form.html')
 	</main>
 	@@include('blocks/footer.html')
 	<script src="./js/addSwiper.js"></script>

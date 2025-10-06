@@ -31,6 +31,7 @@
         width: 100%;
         max-width: 850px;
         aspect-ratio: 850/500;
+        height: fit-content;
     }
 }
 
@@ -38,5 +39,23 @@
     .section-angars-detail-video {
         flex-direction: column;
         align-items: start;
+
+        .left {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .section-angars-detail-video {
+        .left {
+            .h2 {
+                font-size: 30px;
+            }
+        }
+
+        .def-anons-img-for-video {
+            aspect-ratio: 343/271;
+        }
     }
 }

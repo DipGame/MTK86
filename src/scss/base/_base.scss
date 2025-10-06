@@ -215,6 +215,7 @@ main {
 	background: linear-gradient(128.56deg, #0090E7 0%, #006EC1 101.51%);
 	transition: .5s;
 	color: #FFFFFF !important;
+	cursor: pointer;
 }
 
 .button_v2 {
@@ -243,6 +244,7 @@ main {
 	background: linear-gradient(90.94deg, #E5040C 0%, #D0031F 100%);
 	transition: .5s;
 	color: #FFF !important;
+	cursor: pointer;
 }
 
 .button_v3 {
@@ -271,6 +273,7 @@ main {
 	background: linear-gradient(128.56deg, #0090E7 0%, #006EC1 101.51%);
 	color: #FFFFFF !important;
 	transition: none;
+	cursor: pointer;
 }
 
 button:disabled {
@@ -396,7 +399,33 @@ button:disabled {
 
 .bread {
 	width: 100%;
-	background-color: #F3F8FB;
+
+	&:not(.no-back) {
+		background-color: #F3F8FB;
+	}
+
+	&.no-back {
+		position: relative;
+		z-index: 2;
+	}
+
+	&.v2 {
+
+		.fix-opacity {
+			color: #FFF;
+			opacity: .5;
+		}
+
+		a {
+			color: #FFF;
+			opacity: 1;
+
+			&:hover {
+				color: #FFF;
+				opacity: .5;
+			}
+		}
+	}
 
 	ul {
 		display: flex;
@@ -921,6 +950,7 @@ input::-webkit-inner-spin-button {
 		&::after {
 			opacity: .5;
 		}
+
 		&::before {
 			transform: translateX(-50%) translateY(-50%) scale(1.2);
 		}
